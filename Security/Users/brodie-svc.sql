@@ -1,0 +1,2 @@
+CREATE USER [brodie-svc] WITHOUT LOGIN
+GO

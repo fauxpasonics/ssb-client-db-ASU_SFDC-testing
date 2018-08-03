@@ -1,0 +1,10 @@
+CREATE TABLE [recon].[SFDC_Output]
+(
+[UID] [int] NOT NULL IDENTITY(1, 1),
+[BucketID] [int] NULL,
+[Value] [int] NULL,
+[LastRun] [datetime] NULL CONSTRAINT [DF__SFDC_Outp__LastR__38EE7070] DEFAULT (getdate())
+)
+GO
+ALTER TABLE [recon].[SFDC_Output] ADD CONSTRAINT [PK__SFDC_Out__C5B19602AD9E3EE6] PRIMARY KEY CLUSTERED  ([UID])
+GO
